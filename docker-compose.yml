@@ -26,6 +26,8 @@ services:
 
   frontend:
     build: ./frontend
+    environment:
+      - VITE_API_URL=https://todo-backend-herc.onrender.com/api
     ports:
       - "3000:80"
     depends_on:

@@ -9,7 +9,10 @@ export default function Todo() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    if (!token) navigate("/login");
+    if (!token){ 
+      navigate("/login");
+      return;
+    };
     fetchTodos();
   }, []);
 
