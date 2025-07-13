@@ -15,7 +15,7 @@ export default function Todo() {
 
   const fetchTodos = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/todos", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/todos`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -27,7 +27,7 @@ export default function Todo() {
 
   const addTodo = async (title) => {
     try {
-      const res = await fetch("http://localhost:5000/api/todos", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/todos`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ export default function Todo() {
 
   const toggleTodo = async (id, completed) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/todos/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/todos/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +61,7 @@ export default function Todo() {
 
   const deleteTodo = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/todos/${id}`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/todos/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });

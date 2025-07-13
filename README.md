@@ -29,22 +29,22 @@ A fully-featured ToDo app built with **React**, **Express**, **MongoDB**, and **
 
 ## 📦 Folder Structure
 
-/todo-app
-│
-├── /frontend → React frontend
-│ └── Dockerfile → NGINX static hosting
-│
-├── /backend → Express API with auth
-│ └── Dockerfile → Node backend with JWT
-│
-├── docker-compose.yml
-└── README.md
+    /todo-app
+    │
+    ├── /frontend → React frontend
+    │ └── Dockerfile → NGINX static hosting
+    │
+    ├── /backend → Express API with auth
+    │ └── Dockerfile → Node backend with JWT
+    │
+    ├── docker-compose.yml
+    └── README.md
 
 🐳 Run Locally with Docker
 
-git clone https://github.com/your-username/todo-app.git
-cd todo-app
-docker-compose up --build
+  git clone https://github.com/your-username/todo-app.git
+  cd todo-app
+  docker-compose up --build
 
     Frontend: http://localhost:3000
 
