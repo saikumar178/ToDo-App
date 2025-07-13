@@ -79,7 +79,7 @@ export default function Todo() {
   return (
     <div className="todo-container">
       <div className="todo-header">
-        <h2>📝 My Todos</h2>
+        <h2>📝 StackTasks</h2>
         <button onClick={logout}>Logout</button>
       </div>
 
