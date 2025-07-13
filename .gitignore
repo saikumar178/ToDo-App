@@ -8,7 +8,6 @@ frontend/build/
 backend/coverage/
 
 # Ignore environment files
-frontend/.env*
 backend/.env*
 
 # System
