@@ -29,7 +29,7 @@ export default function Login() {
         alert("Login successful!");
         navigate("/");
       } else {
-        console.log(import.meta.env.VITE_API_URL);
+        console.log("VITE_API_URL:", import.meta.env.VITE_API_URL);
         alert("Invalid credentials");
       }
     } catch (err) {
