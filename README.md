@@ -42,7 +42,7 @@ A fully-featured ToDo app built with **React**, **Express**, **MongoDB**, and **
 
 🐳 Run Locally with Docker
 
-  git clone https://github.com/your-username/todo-app.git
+  git clone https://github.com/saikumar178/ToDo-App.git
   cd todo-app
   docker-compose up --build
 
@@ -52,7 +52,7 @@ A fully-featured ToDo app built with **React**, **Express**, **MongoDB**, and **
 
 🌍 Live Demo
 
-    🖥️ Frontend: [link](https://todo-frontend-c92r.onrender.com)
+    🖥️ Frontend: https://todo-frontend-c92r.onrender.com
 
-    🔗 Backend:  [link](https://todo-backend-herc.onrender.com)
+    🔗 Backend:  https://todo-backend-herc.onrender.com
 
