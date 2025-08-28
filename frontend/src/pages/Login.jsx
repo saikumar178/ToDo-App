@@ -9,7 +9,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (localStorage.getItem("token")) navigate("/");
+    if (localStorage.getItem("token")) navigate("https://todo-frontend-c92r.onrender.com/");
   }, []);
 
   const handleSubmit = async (e) => {
