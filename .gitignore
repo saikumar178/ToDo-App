@@ -9,6 +9,8 @@ backend/coverage/
 
 # Ignore environment files
 backend/.env*
+frontend/.env.production
+.env
 
 # System
 .DS_Store

@@ -19,15 +19,15 @@ services:
       - ./backend:/app            # mount source code for live reload
       - /app/node_modules         # avoid overriding node_modules
     environment:
-      - PORT=5000
-      - MONGO_URL=MONGO_URL=mongodb+srv://testuser:test123@todo-cluster.yhmdnis.mongodb.net/?retryWrites=true&w=majority&appName=todo-cluster
-      - JWT_SECRET=your_secret_key
+      - PORT=${PORT}
+      - MONGO_URL=MONGO_URL=${MONGO_URL}
+      - JWT_SECRET=${JWT_SECRET}
     command: npm run dev          # 👈 override CMD if needed
 
   frontend:
     build: ./frontend
     environment:
-      - VITE_API_URL=https://todo-backend-herc.onrender.com/api
+      - VITE_API_URL=${VITE_API_URL}
     ports:
       - "3000:80"
     depends_on:
